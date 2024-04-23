@@ -23,3 +23,23 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+import os
+import math
+os.system('cls')
+##balan = float(input("Enter your principle amount: "))     
+balan = 0
+for i in range(1,13):
+    
+    purch = float(input(f"Enter total purchases for month #{i}: "))
+    payme = float(input(f"Enter total payment for month #{i}: "))
+    balan = balan + purch - payme 
+    balan = float(balan)
+    inter = balan * 0.02
+    round(balan,2)
+    round(inter,2)
+    print(f"2% interest has been charged: {inter}")
+    print(f"your closing balance is ${balan + inter}")
+    print("type anything to continue::")
+    input()
+    os.system('cls')
+    

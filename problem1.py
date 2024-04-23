@@ -22,3 +22,13 @@ enter a number:4
 ****
 
 """
+import os
+os.system('cls')
+x = int(input("Enter a width: "))
+y = int(input("Enter a height: "))
+
+for i in range(1, y + 1):
+    print("\n")
+    for i in range(1, x + 1):
+        print('*',end="")
+input()
