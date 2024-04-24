@@ -37,3 +37,11 @@ example:
 Enter a number: -4
 Invalid input
 """
+import math
+import os 
+y=1
+x = int(input(" Enter an integer: "))
+for i in range(1,x):
+    y = y + (y * i)
+else:
+    print(f"{x}! is {y}")
